@@ -10,7 +10,7 @@ var losses = 0;
 window.onload = function() {
     var index = Math.floor(Math.random() * lettersArray.length);
     letterToGuess = lettersArray[index];
-  }
+}
   
 document.onkeyup = function(event) {
                  
@@ -29,7 +29,8 @@ document.onkeyup = function(event) {
             letterToGuess = lettersArray[index];
             document.getElementById("guesses-so-far").innerHTML = ""
             console.log("Letter to be guessed " +  letterToGuess);
-        }else{
+         }
+        else{
             guessesRemaining = guessesRemaining - 1;
             document.getElementById("guesses-remaining").innerHTML = guessesRemaining;
             if(guessesRemaining == 0){                
@@ -38,36 +39,7 @@ document.onkeyup = function(event) {
                 guessesRemaining = 10;  
                 document.getElementById("guesses-remaining").innerHTML = guessesRemaining; 
                 document.getElementById("guesses-so-far").innerHTML = ""            
-            }            
+            }           
         }
     }
-
-
-/*
-var selectLetter = function(){
-    letterToGuess = lettersArray[Math.floor(Math.random() * lettersArray.length)];
-    console.log (letterToGuess);
-
-}
-var updateGuessesSoFar = function(){
-    document.getElementById("guesses-so-far").innerHTML = lettersGuessedArray;
-};
-var updateGuessesLeft = function(){
-    guessesRemaining--;    
-    document.getElementById("guesses-remaining").innerHTML = guessesRemaining;
-};
-
-var resetFunction = function(){
-    guessesRemaining = 10;
-    lettersGuessedArray = [];
-    updateGuessesLeft();
-    selectLetter();
-    updateGuessesSoFar();
-};*/
-    /*
-    var letterCode = event.keyCode;
-   lettersGuessedArray.push(letter);
-   updateGuessesLeft();
-   updateGuessesSoFar();*/
-
 };
