@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+    <head>
+
+        <title>Psyhsic Game</title>
+        <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="assets/Javascript/game.js"></script>
+    <style>
+        #header{
+            background-color:seagreen;
+            color:orange;
+            height: 60px;
+            text-align: center;
+        
+        }
+
+        #body{
+            Display: box;
+            background-color:silver;
+            margin-left: auto;
+            margin-bottom: 0%;
+            text-align: justify;
+            height:720px;
+            border-style: double;
+            color:teal;
+        }
+        #img p{
+            text-align: center;
+        }
+
+        #MainSection{
+            text-align: left;
+            margin-top: -320px;
+        }
+
+
+    
+    
+    </style>
+        
+    </head>
+    <body>
+        <div id="body">
+        <div id="header"><h1 >The Psychic Game</h1></div>
+        <p>Press letters only to make  guesses. You've upto 10 guesses to make. If all 10 guesses are wrong, you loose and your "losses" will increase by 1 and game starts over. If your choice is right, you win and game starts over again.  </p>
+        <hr>
+        <div id= "img">
+            <p><img src="assets/images/guess.gif" alt="guess.gif" align="center" height="320px" width="320px"></p>
+        </div>
+        <div id="MainSection">
+        <h4> Guess what letter I'm thinking of:</h4>
+        <h4>Wins:<span id = "wins">0</span></h4>
+        <h4>Losses:<span id="losses">0</span></h4>
+        <h4>Guesses remaining:<span id="guesses-remaining">10</span></h4>
+        <h4>Your Guesses so far:<span id="guesses-so-far">0</span></h4>
+        </div>
+        
+    </div>
+    </body>
+</html>
