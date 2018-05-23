@@ -39,7 +39,7 @@ document.onkeyup = function(event) {
                 guessesRemaining = 10;  
                 document.getElementById("guesses-remaining").innerHTML = guessesRemaining; 
                 document.getElementById("guesses-so-far").innerHTML = ""            
-            }           
+            }          
         }
     }
 };
